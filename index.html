@@ -1,13 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my portfolio</title>
+    <title>이용인 | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>나의 포트폴리오</h1>
-    <script src="app.js"></script>
+    <nav>
+        <div class="logo">YONG IN.<span>DEV</span></div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero">
+            <p class="school">미래산업과학고등학교 1학년</p>
+            <h1>끊임없이 도전하는<br>메이커 <span>이용인</span>입니다.</h1>
+            <div class="scroll-down"></div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 class="sec-title">About Me</h2>
+        <div class="about-grid">
+            <div class="card info-card">
+                <h3><i class="fas fa-graduation-cap"></i> 학력 및 활동</h3>
+                <p>미래산업과학고등학교 재학</p>
+                <p>학급 부회장 (2학기)</p>
+            </div>
+            <div class="card info-card">
+                <h3><i class="fas fa-award"></i> 대표 자격증</h3>
+                <p>3D프린터 운용기능사</p>
+            </div>
+            <div class="card full-card">
+                <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                <div class="skills-tag">
+                    <span>C언어</span><span>Python</span><span>Arduino</span><span>Solidworks</span>
+                    <span>Unity</span><span>HTML/CSS/JS</span><span>Autodesk</span><span>Vibe coding</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards">
+        <h2 class="sec-title">Awards</h2>
+        <div class="award-list">
+            <div class="award-item"><span>발명페스티벌 은상</span><span>교내</span></div>
+            <div class="award-item"><span>공감오목 한마당 은상</span><span>교내</span></div>
+            <div class="award-item"><span>인공지능 활용 우수사례 공모전 참가상</span><span>외부</span></div>
+            <div class="award-item"><span>1, 2학기 독서상</span><span>교내</span></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="sec-title">Major Projects</h2>
+        
+        <div class="project-box">
+            <div class="project-header">
+                <h3>디지털 PBL: 스마트 시스템 설계</h3>
+                <span class="p-tag">Arduino / Solidworks</span>
+            </div>
+            <div class="project-body">
+                <div class="p-row"><strong>Role</strong><span>아두이노 제어 및 3D 설계</span></div>
+                <div class="p-row"><strong>Issue</strong><span>서보모터 구동 각도 및 토크 부족 문제 발생</span></div>
+                <div class="p-row"><strong>Solve</strong><span>팀원들과 기구부 공차 분석 및 코드 리팩토링을 통한 정밀 제어 구현</span></div>
+                <div class="p-row"><strong>Lesson</strong><span>하드웨어와 소프트웨어 정합성의 중요성과 기술적 협업의 가치 습득</span></div>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-header">
+                <h3>AI 이노베이션: 정보 연동 플랫폼</h3>
+                <span class="p-tag">Lovable / Public API</span>
+            </div>
+            <div class="project-body">
+                <div class="p-row"><strong>Role</strong><span>웹 프론트엔드 및 API 아키텍처 설계</span></div>
+                <div class="p-row"><strong>Issue</strong><span>약국/점자 API 호출 시 비동기 데이터 충돌 및 로딩 지연</span></div>
+                <div class="p-row"><strong>Solve</strong><span>AI 프롬프트 엔지니어링을 활용해 비동기 로직 수정 및 예외 처리 완비</span></div>
+                <div class="p-row"><strong>Lesson</strong><span>AI를 활용한 생산성 향상과 실시간 데이터 처리 프로세스 이해</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-grid">
+            <div class="c-item"><i class="fas fa-envelope"></i> a01021289526@gmail.com</div>
+            <div class="c-item"><i class="fas fa-phone"></i> 010-2128-9526</div>
+            <div class="c-item"><i class="fas fa-user"></i> 이용인</div>
+        </div>
+        <p class="copy">&copy; 2024 YongIn. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
